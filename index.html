@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section style="width: 400px;">
+        <h1>Шифратор и Дешифратор Кода Цезаря</h1>
+
+        <label for="shift">Сдвиг:</label>
+        <input type="number" id="shift" value="3">
+
+        <label for="text">Введите текст:</label>
+        <textarea id="text"></textarea>
+
+        <button onclick="encrypt()">Зашифровать</button>
+        <button onclick="decrypt()">Расшифровать</button>
+
+        <h2>Результат:</h2>
+        <textarea id="result" readonly></textarea>
+        <p>
+            Задание 1: Создать страницу, на которой 
+            будет представлен шифратор и дешифратор 
+            кода Цезаря, реализованный при помощи 
+            структуры данных map.
+        </p>
+    </section>
+    
+    <section style="width: 400px;">
+        <h1>Добавить товар</h1>
+        
+        <input type="text" id="product" placeholder="Введите название товара">
+        <button onclick="addProduct()">Добавить</button>
+        
+        <h2>Список товаров:</h2>
+        <ul id="productList"></ul>
+        <p> Задание 2:
+            Создать страницу, на которой будет представлена 
+            возможность заносить товары в список. Однако если 
+            такой товар уже существует, то занесение не должно 
+            срабатывать с дубликатом. Реализовать при помощи 
+            коллекции уникальных значений set.
+        </p>
+    </section>
+
+    <section>
+        <h1>Работа с Map</h1>
+
+<div>
+    <input type="text" id="keyInput" placeholder="Ключ">
+    <input type="text" id="valueInput" placeholder="Значение">
+    <button onclick="addPair()">Добавить</button>
+</div>
+
+<div>
+    <input type="text" id="deleteKeyInput" placeholder="Ключ для удаления">
+    <button onclick="deletePair()">Удалить</button>
+</div>
+
+<div>
+    <input type="text" id="searchInput" placeholder="Поиск">
+    <button onclick="searchPairs()">Искать</button>
+    <p id="searchResult"></p>
+</div>
+
+<div>
+    <button onclick="clearMap()">Очистить</button>
+</div>
+
+<div>
+    <input type="number" id="displayCount" placeholder="Количество пар">
+    <button onclick="updateDisplay()">Обновить отображение</button>
+</div>
+
+<div id="mapDisplay"></div>
+<p style="width: 300px;">Зaдание 3: Создать страницу с отображением
+готового map объекта, с произвольным заполнением. 
+Добавить на страницу input-элементы, позволяющие:
+добавлять новые пары (ключ, значение), удалять выбранное 
+значение, искать количество совпадений (по ключам и значениям), 
+очищать весь объект, указывать какое кол-во пар (ключ, значение)
+будут отображаться.</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
